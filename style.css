@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(15, 11, 11);
+    color: white;
+    height: 100vh;
+    background-image: url(images/abstract-low-poly-background-with-connecting-lines-dots.jpg);
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 0 10px 0 10px;
+    position: sticky;
+    box-shadow: 0 2px 5px black;
+    height: 40px;
+}
+
+
+
+header li {
+    display: inline;
+    margin: 10px
+}
+
+
+
+header a {
+    color: bisque;
+    text-decoration: none;
+    border-right: 2px solid white ;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.titre {
+    text-align: center;
+    align-items: center;
+    margin-top: 30vh;
+    margin-bottom: 20px;
+}
+
+header p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0 0 0 ;
+    width: 85%;
+    margin: auto;
+}
+
+
+.nos-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    box-shadow: 0 0 5px black;
+}
+
+
+.lien-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    background-color: rgba(0, 128, 0, 0.623);
+    padding-right: 10px;
+    border-radius: 15px;
+}
+.lien-whatsapp a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.logo-whatsapp {
+    max-width: 40px;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 20%;
+    padding-left: 10%;
+}
+
+footer * {
+    margin-top: 5px;
+}
