@@ -7,17 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PLCORP — L'Excellence Numérique & Créative</title>
     <meta name="description" content="PLCORP, votre partenaire technologique à Gagnoa. Développement web, impression, design graphique, formations et maintenance informatique.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Cursor -->
-    <div id="cursor">
-        <div id="cursor-dot"></div>
-    </div>
-    <div id="cursor-ring"></div>
 
     <!-- Page transition overlay -->
     <div id="page-transition"></div>
@@ -63,12 +58,8 @@
                 De la conception logicielle à l'impression haute définition, PLCORP transforme vos idées en réalité. Cinq pôles d'expertise, une vision unique.
             </p>
             <div class="hero-actions">
-                <a href="services.html" class="btn btn-gold">
-        Découvrir nos pôles <i class="fas fa-arrow-right"></i>
-      </a>
-                <a href="contact.html" class="btn btn-outline">
-        Demander un devis
-      </a>
+                <a href="services.html" class="btn btn-gold">Découvrir nos pôles <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-outline">Demander un devis</a>
             </div>
         </div>
         <div class="hero-scroll">
@@ -119,16 +110,24 @@
             </div>
 
             <div class="poles-grid">
+                <!-- IMMO -->
+                <div class="pole-card immo reveal reveal-delay-1">
+                    <div class="pole-glow"></div>
+                    <div class="pole-icon"><i class="fas fa-city"></i></div>
+                    <div class="pole-name">PL Corp IMMO & SERVICES</div>
+                    <p class="pole-desc">Solutions technologiques pour l'immobilier. Gestion locative, plans 2D/3D et services transactionnels.</p>
+                    <a href="services.html#immo" class="pole-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                </div>
                 <!-- Tech -->
-                <div class="pole-card tech reveal reveal-delay-1">
+                <div class="pole-card tech reveal reveal-delay-2">
                     <div class="pole-glow"></div>
                     <div class="pole-icon"><i class="fas fa-microchip"></i></div>
                     <div class="pole-name">PL Corp Tech</div>
-                    <p class="pole-desc">Maintenance préventive, réseaux et solutions matérielles pour vos équipements.</p>
+                    <p class="pole-desc">Maintenance, réseaux et solutions matérielles pour les entreprises et particuliers.</p>
                     <a href="services.html#tech" class="pole-link">Voir le pôle <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Academy -->
-                <div class="pole-card academy reveal reveal-delay-2">
+                <div class="pole-card academy reveal reveal-delay-3">
                     <div class="pole-glow"></div>
                     <div class="pole-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="pole-name">PL Corp Academy</div>
@@ -136,27 +135,27 @@
                     <a href="services.html#academy" class="pole-link">Voir le pôle <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Print -->
-                <div class="pole-card print reveal reveal-delay-3">
+                <div class="pole-card print reveal reveal-delay-4">
                     <div class="pole-glow"></div>
                     <div class="pole-icon"><i class="fas fa-print"></i></div>
                     <div class="pole-name">PL Corp Print</div>
-                    <p class="pole-desc">Impression tous supports : bâches, cartes, textiles en haute définition.</p>
+                    <p class="pole-desc">Impression de cartes de visite premium et imperméables, livraison partout à Gagnoa.</p>
                     <a href="services.html#print" class="pole-link">Commander <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Graphic -->
-                <div class="pole-card graphic reveal reveal-delay-4">
+                <div class="pole-card graphic reveal reveal-delay-5">
                     <div class="pole-glow"></div>
                     <div class="pole-icon"><i class="fas fa-pen-nib"></i></div>
                     <div class="pole-name">PL Corp Graphic</div>
                     <p class="pole-desc">Logos, chartes graphiques et visuels percutants pour votre marque.</p>
-                    <a href="services.html#graphic" class="pole-link">Portfolio <i class="fas fa-arrow-right"></i></a>
+                    <a href="services.html#graphic" class="pole-link">Voir le pôle <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Digital -->
-                <div class="pole-card digital reveal reveal-delay-5">
+                <div class="pole-card digital reveal reveal-delay-6">
                     <div class="pole-glow"></div>
                     <div class="pole-icon"><i class="fas fa-code"></i></div>
                     <div class="pole-name">PL Corp Digital</div>
-                    <p class="pole-desc">Développement web, apps mobiles et solutions digitales sur mesure.</p>
+                    <p class="pole-desc">Développement d'applications métiers, sites web performants et solutions digitales sur mesure.</p>
                     <a href="services.html#digital" class="pole-link">Lancer un projet <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -168,7 +167,7 @@
         <div class="container">
             <div class="about-teaser-grid">
                 <div>
-                    <div class="section-label reveal">Notre Histoire</div>
+                    <div class="section-label reveal">Notre Entreprise</div>
                     <h2 class="section-title reveal reveal-delay-1">L'Innovation<br>au cœur du Gôh</h2>
                     <p class="section-sub reveal reveal-delay-2" style="margin-bottom:32px;">
                         Fondée par <strong style="color:var(--gold)">Prince Lahide</strong>, PLCORP est un écosystème complet dédié à l'innovation à Gagnoa. Notre mission : apporter des standards de qualité internationaux au niveau local.
@@ -195,43 +194,31 @@
         </div>
     </section>
 
-    <!-- ===================== TESTIMONIALS ===================== -->
-    <section id="testimonials">
+    <!-- ===================== REALISATIONS ===================== -->
+    <section id="realisations">
         <div class="container">
-            <div class="section-label reveal">Témoignages</div>
-            <h2 class="section-title reveal reveal-delay-1">Ils nous font<br>confiance</h2>
-            <div class="testimonials-track">
-                <div class="testimonial-card reveal reveal-delay-1">
-                    <div class="tc-stars">★★★★★</div>
-                    <p class="tc-quote">"PLCORP a conçu notre site web en un temps record. Le résultat dépasse toutes nos attentes — professionnel, rapide et parfaitement adapté à notre image."</p>
-                    <div class="tc-author">
-                        <div class="tc-avatar">KD</div>
-                        <div>
-                            <div class="tc-name">Konan Didier</div>
-                            <div class="tc-role">Directeur, Cabinet KD Conseil</div>
-                        </div>
+            <div class="section-label reveal">Confiance & Expertise</div>
+            <h2 class="section-title reveal reveal-delay-1">Nos Réalisations<br>Concrètes</h2>
+            <div class="realisations-grid">
+                <div class="realisation-card reveal reveal-delay-1">
+                    <img src="https://placehold.co/600x400/111827/00FFFF/png?text=PL-IMMO+App" alt="Application de gestion immobilière">
+                    <div class="realisation-content">
+                        <div class="realisation-title">Application de Gestion Immobilière</div>
+                        <p class="pole-desc">Développement d'une application métier pour la gestion locative à Gagnoa.</p>
                     </div>
                 </div>
-                <div class="testimonial-card reveal reveal-delay-2">
-                    <div class="tc-stars">★★★★★</div>
-                    <p class="tc-quote">"Les formations dispensées par PL Corp Academy ont permis à mon équipe de monter en compétences. Pedagogie exceptionnelle et très pratique."</p>
-                    <div class="tc-author">
-                        <div class="tc-avatar">AB</div>
-                        <div>
-                            <div class="tc-name">Aya Brou</div>
-                            <div class="tc-role">Responsable RH, Entreprise Gagnoa</div>
-                        </div>
+                <div class="realisation-card reveal reveal-delay-2">
+                    <img src="https://placehold.co/600x400/111827/FF00FF/png?text=Cartes+PVC" alt="Cartes de visite imperméables">
+                    <div class="realisation-content">
+                        <div class="realisation-title">Cartes de Visite Imperméables</div>
+                        <p class="pole-desc">Conception et impression de cartes de visite premium sur support PVC pour des professionnels locaux.</p>
                     </div>
                 </div>
-                <div class="testimonial-card reveal reveal-delay-3">
-                    <div class="tc-stars">★★★★★</div>
-                    <p class="tc-quote">"Notre identité visuelle a été entièrement repensée par PL Corp Graphic. Qualité d'impression irréprochable, délais respectés. Je recommande vivement."</p>
-                    <div class="tc-author">
-                        <div class="tc-avatar">MO</div>
-                        <div>
-                            <div class="tc-name">Moussa Ouattara</div>
-                            <div class="tc-role">Gérant, Boutique Mode Gagnoa</div>
-                        </div>
+                <div class="realisation-card reveal reveal-delay-3">
+                    <img src="https://placehold.co/600x400/111827/39FF14/png?text=Logo+Design" alt="Création de logo">
+                    <div class="realisation-content">
+                        <div class="realisation-title">Identité Visuelle pour Startups</div>
+                        <p class="pole-desc">Création de logos et chartes graphiques modernes pour des entreprises émergentes de la région du Gôh.</p>
                     </div>
                 </div>
             </div>
@@ -270,6 +257,7 @@
                 <div>
                     <div class="footer-col-title">Nos Pôles</div>
                     <div class="footer-links">
+                        <a href="services.html#immo">PL Corp IMMO</a>
                         <a href="services.html#tech">PL Corp Tech</a>
                         <a href="services.html#academy">PL Corp Academy</a>
                         <a href="services.html#print">PL Corp Print</a>
@@ -289,8 +277,8 @@
                 <div>
                     <div class="footer-col-title">Contact</div>
                     <div class="footer-links" style="gap:12px;">
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>01 52 054 777</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>05 75 698 835</span>
+                        <span class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</span>
+                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i> 05 75 698 835</span>
                         <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>princelah98@gmail.com</span>
                         <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
                     </div>

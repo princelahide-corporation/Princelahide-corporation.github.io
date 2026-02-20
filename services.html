@@ -13,12 +13,6 @@
 
 <body>
 
-    <div id="cursor">
-        <div id="cursor-dot"></div>
-    </div>
-    <div id="cursor-ring"></div>
-    <div id="page-transition"></div>
-
     <nav class="mobile-nav">
         <span class="mobile-nav-close"><i class="fas fa-times"></i></span>
         <a href="index.html">Accueil</a>
@@ -26,6 +20,8 @@
         <a href="about.html">À Propos</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+    <div id="page-transition"></div>
 
     <header id="navbar">
         <nav>
@@ -54,6 +50,7 @@
     <!-- Pole navigation pills -->
     <div style="background:var(--bg-2); border-bottom:1px solid var(--border); padding:20px 40px; position:sticky; top:74px; z-index:100; overflow-x:auto;">
         <div style="max-width:1240px; margin:0 auto; display:flex; gap:12px; white-space:nowrap;">
+            <a href="#immo" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-city" style="color:var(--violet)"></i> IMMO & SERVICES</a>
             <a href="#tech" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-microchip" style="color:var(--cyan)"></i> Tech</a>
             <a href="#academy" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-graduation-cap" style="color:var(--gold)"></i> Academy</a>
             <a href="#print" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-print" style="color:var(--magenta)"></i> Print</a>
@@ -67,6 +64,29 @@
         <div class="container">
             <div class="services-detail-grid">
 
+                <!-- IMMO -->
+                <div id="immo" class="service-row immo-row reveal">
+                    <div class="service-row-visual">
+                        <i class="fas fa-city srv-icon-bg"></i>
+                        <i class="fas fa-city" style="font-size:4rem; position:relative; z-index:1;"></i>
+                    </div>
+                    <div class="service-row-text">
+                        <div class="service-row-number">Pôle 01 · IMMO & SERVICES</div>
+                        <h2 class="service-row-title">PL Corp IMMO</h2>
+                        <p class="service-row-desc">
+                            Solutions technologiques de pointe pour le secteur immobilier. Nous développons des applications de gestion locative, réalisons des plans 2D/3D pour la promotion et offrons des services transactionnels innovants pour les agences et propriétaires.
+                        </p>
+                        <div class="service-tags">
+                            <span class="service-tag">Application de gestion</span>
+                            <span class="service-tag">Plans 2D & 3D</span>
+                            <span class="service-tag">Visites virtuelles</span>
+                            <span class="service-tag">Site web pour agence</span>
+                            <span class="service-tag">Marketing immobilier</span>
+                        </div>
+                        <a href="contact.html" class="btn-service">Lancer un projet immo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
                 <!-- TECH -->
                 <div id="tech" class="service-row tech-row reveal">
                     <div class="service-row-visual">
@@ -74,11 +94,10 @@
                         <i class="fas fa-microchip" style="font-size:4rem; position:relative; z-index:1;"></i>
                     </div>
                     <div class="service-row-text">
-                        <div class="service-row-number">Pôle 01 · Tech</div>
+                        <div class="service-row-number">Pôle 02 · Tech</div>
                         <h2 class="service-row-title">PL Corp Tech</h2>
                         <p class="service-row-desc">
-                            Notre département technique assure la maintenance préventive et curative de vos équipements informatiques. De l'installation de postes de travail à la configuration de réseaux complexes, notre équipe garantit la disponibilité et la performance de votre
-                            parc informatique.
+                            Solutions de maintenance et de réseaux pour les entreprises locales. Nous assurons la maintenance préventive et curative de vos équipements, de l'installation de postes à la configuration de réseaux complexes pour garantir la performance de votre parc.
                         </p>
                         <div class="service-tags">
                             <span class="service-tag">Maintenance PC & Mac</span>
@@ -95,7 +114,7 @@
                 <!-- ACADEMY -->
                 <div id="academy" class="service-row academy-row reverse reveal">
                     <div class="service-row-text">
-                        <div class="service-row-number">Pôle 02 · Formation</div>
+                        <div class="service-row-number">Pôle 03 · Formation</div>
                         <h2 class="service-row-title">PL Corp Academy</h2>
                         <p class="service-row-desc">
                             L'avenir appartient à ceux qui savent. Notre académie propose des formations intensives et pratiques pour maîtriser les outils numériques d'aujourd'hui. Cours individuels, groupes, ou formations en entreprise — adaptés à votre niveau et vos objectifs.
@@ -123,10 +142,10 @@
                         <i class="fas fa-print" style="font-size:4rem; position:relative; z-index:1;"></i>
                     </div>
                     <div class="service-row-text">
-                        <div class="service-row-number">Pôle 03 · Impression</div>
+                        <div class="service-row-number">Pôle 04 · Impression</div>
                         <h2 class="service-row-title">PL Corp Print</h2>
                         <p class="service-row-desc">
-                            Donnez vie à vos projets sur tous supports. Notre imprimerie haute définition produit des visuels qui marquent : de la carte de visite à la bâche géante, en passant par le textile personnalisé. Qualité professionnelle, délais maîtrisés.
+                            Impression de cartes de visite premium et imperméables, avec livraison partout à Gagnoa. Nous produisons aussi des visuels qui marquent : de la bâche géante au textile personnalisé, avec une qualité professionnelle et des délais maîtrisés.
                         </p>
                         <div class="service-tags">
                             <span class="service-tag">Cartes de visite</span>
@@ -143,7 +162,7 @@
                 <!-- GRAPHIC -->
                 <div id="graphic" class="service-row graphic-row reverse reveal">
                     <div class="service-row-text">
-                        <div class="service-row-number">Pôle 04 · Design</div>
+                        <div class="service-row-number">Pôle 05 · Design</div>
                         <h2 class="service-row-title">PL Corp Graphic</h2>
                         <p class="service-row-desc">
                             Votre identité visuelle est votre première impression. Notre studio de design crée des visuels qui racontent votre histoire et séduisent votre audience. Du logo à la charte graphique complète, nous construisons des marques mémorables.
@@ -171,10 +190,10 @@
                         <i class="fas fa-code" style="font-size:4rem; position:relative; z-index:1;"></i>
                     </div>
                     <div class="service-row-text">
-                        <div class="service-row-number">Pôle 05 · Digital</div>
+                        <div class="service-row-number">Pôle 06 · Digital</div>
                         <h2 class="service-row-title">PL Corp Digital</h2>
                         <p class="service-row-desc">
-                            Le digital est le moteur de votre croissance. Nous développons des sites web performants, des applications mobiles intuitives et des solutions digitales sur mesure qui propulsent votre business dans l'ère numérique.
+                            Le digital est le moteur de votre croissance. Nous mettons l'accent sur le développement d'applications métiers (comme notre appli de gestion immobilière) et de solutions sur mesure qui propulsent votre business dans l'ère numérique.
                         </p>
                         <div class="service-tags">
                             <span class="service-tag">Sites vitrine & e-commerce</span>
@@ -223,6 +242,7 @@
                 <div>
                     <div class="footer-col-title">Nos Pôles</div>
                     <div class="footer-links">
+                        <a href="#immo">PL Corp IMMO</a>
                         <a href="#tech">PL Corp Tech</a>
                         <a href="#academy">PL Corp Academy</a>
                         <a href="#print">PL Corp Print</a>
@@ -242,7 +262,7 @@
                 <div>
                     <div class="footer-col-title">Contact</div>
                     <div class="footer-links" style="gap:12px;">
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>01 52 054 777</span>
+                        <span class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</span>
                         <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>princelah98@gmail.com</span>
                         <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
                     </div>

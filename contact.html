@@ -45,7 +45,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 22px 24px;
-            cursor: none;
+            cursor: pointer;
             font-weight: 600;
             font-size: 0.95rem;
             user-select: none;
@@ -79,12 +79,6 @@
 
 <body>
 
-    <div id="cursor">
-        <div id="cursor-dot"></div>
-    </div>
-    <div id="cursor-ring"></div>
-    <div id="page-transition"></div>
-
     <nav class="mobile-nav">
         <span class="mobile-nav-close"><i class="fas fa-times"></i></span>
         <a href="index.html">Accueil</a>
@@ -92,6 +86,8 @@
         <a href="about.html">À Propos</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+    <div id="page-transition"></div>
 
     <header id="navbar">
         <nav>
@@ -145,6 +141,7 @@
                             <label for="service">Pôle concerné</label>
                             <select id="service" name="service">
               <option value="">— Sélectionnez un pôle —</option>
+              <option value="immo">PL Corp IMMO & SERVICES</option>
               <option value="tech">PL Corp Tech — Maintenance & Réseaux</option>
               <option value="academy">PL Corp Academy — Formations</option>
               <option value="print">PL Corp Print — Impression</option>
@@ -229,11 +226,19 @@
                         </div>
                     </div>
 
+                    <div style="margin-top: 28px; text-align: center;">
+                        <div class="info-title" style="font-size: 1rem; margin-bottom: 14px;">Liaison instantanée</div>
+                        <div style="padding: 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); display: inline-block;">
+                            <img src="https://placehold.co/150x150/ffffff/080C14/png?text=QR+Code" alt="QR Code WhatsApp" style="width: 150px; height: 150px; border-radius: 8px;">
+                            <p style="color: var(--muted-2); font-size: 0.8rem; margin-top: 12px;">Scannez pour discuter sur WhatsApp</p>
+                        </div>
+                    </div>
+
                     <div style="margin-top:28px;">
                         <div class="info-title" style="font-size:1rem; margin-bottom:14px;">Suivez-nous</div>
                         <div class="social-row">
-                            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profilee.php?id=61558742263762" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <!--a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>-->
                             <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         </div>
@@ -327,6 +332,7 @@
                 <div>
                     <div class="footer-col-title">Nos Pôles</div>
                     <div class="footer-links">
+                        <a href="services.html#immo">PL Corp IMMO</a>
                         <a href="services.html#tech">PL Corp Tech</a>
                         <a href="services.html#academy">PL Corp Academy</a>
                         <a href="services.html#print">PL Corp Print</a>
@@ -346,7 +352,7 @@
                 <div>
                     <div class="footer-col-title">Contact</div>
                     <div class="footer-links" style="gap:12px;">
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>01 52 054 777</span>
+                        <span class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</span>
                         <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>princelah98@gmail.com</span>
                         <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
                     </div>
