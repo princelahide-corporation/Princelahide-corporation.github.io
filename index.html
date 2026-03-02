@@ -1,302 +1,270 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PLCORP — L'Excellence Numérique & Créative</title>
-    <meta name="description" content="PLCORP, votre partenaire technologique à Gagnoa. Développement web, impression, design graphique, formations et maintenance informatique.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PLCORP — Solutions Numériques & Créatives à Gagnoa</title>
+  <meta name="description" content="PLCORP, votre partenaire technologique à Gagnoa. Développement web, impression, design graphique, formations et maintenance informatique.">
 
+  <!-- SEO & Social Sharing (Open Graph / Twitter) -->
+  <meta property="og:title" content="PLCORP — Solutions Numériques & Créatives à Gagnoa">
+  <meta property="og:description" content="Votre partenaire technologique pour le développement web, l'impression, le design, les formations et la maintenance à Gagnoa.">
+  <meta property="og:image" content="https://www.plcorp.ci/assets/img/logo.png">
+  <meta property="og:url" content="https://www.plcorp.ci">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PLCORP — Solutions Numériques & Créatives à Gagnoa">
+  <meta name="twitter:description" content="Votre partenaire technologique pour le développement web, l'impression, le design, les formations et la maintenance à Gagnoa.">
+  <meta name="twitter:image" content="https://www.plcorp.ci/assets/img/logo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    // Apply theme immediately to prevent FOUC
+    (function(){
+      var t = localStorage.getItem('plcorp-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
 <body>
 
-    <!-- Page transition overlay -->
-    <div id="page-transition"></div>
+<!-- ── MOBILE NAV ── -->
+<nav class="mobile-nav" id="mobile-nav-menu" aria-label="Navigation mobile">
+  <button class="mobile-nav-close" aria-label="Fermer le menu"><i class="fas fa-times"></i></button>
+  <a href="index.html" class="active">Accueil</a>
+  <a href="services.html">Nos 6 Pôles</a>
+  <a href="about.html">À Propos</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-    <!-- Mobile Nav -->
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-        <span class="mobile-nav-close" aria-label="Fermer le menu"><i class="fas fa-times"></i></span>
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Nos Pôles</a>
-        <a href="about.html">À Propos</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <!-- ===================== HEADER ===================== -->
-    <header id="navbar">
-        <nav>
-            <div class="logo">PLCORP<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="services.html">Nos 5 Pôles</a></li>
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
-            </ul>
-            <div class="burger" aria-label="Ouvrir le menu">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ===================== HERO ===================== -->
-    <section id="hero">
-        <canvas id="hero-canvas"></canvas>
-        <div class="hero-inner">
-            <div class="hero-badge">
-                <span>Gagnoa, Côte d'Ivoire</span>
-            </div>
-            <h1 class="hero-title">
-                L'Excellence<br>
-                <span class="gold-word">Numérique</span>
-                <span class="line-2">& Créative.</span>
-            </h1>
-            <p class="hero-desc">
-                De la conception logicielle à l'impression haute définition, PLCORP transforme vos idées en réalité. Cinq pôles d'expertise, une vision unique.
-            </p>
-            <div class="hero-actions">
-                <a href="services.html" class="btn btn-gold">Découvrir nos pôles <i class="fas fa-arrow-right"></i></a>
-                <a href="contact.html" class="btn btn-outline">Demander un devis</a>
-            </div>
+<!-- ── HEADER ── -->
+<header id="navbar">
+  <nav>
+    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo PLCORP"><span class="logo-text">PLCORP</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="services.html">Nos 6 Pôles</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
+    </ul>
+    <div class="nav-controls">
+      <!-- Theme Toggle -->
+      <label class="theme-toggle" aria-label="Changer le thème">
+        <input type="checkbox" class="tt-input">
+        <div class="tt-track">
+          <div class="tt-thumb">
+            <span class="tt-icon-dark">🌙</span>
+            <span class="tt-icon-light">☀️</span>
+          </div>
         </div>
-        <div class="hero-scroll">
-            <span>Défiler</span>
-            <svg width="16" height="22" viewBox="0 0 16 22" fill="none">
-      <rect x="0.5" y="0.5" width="15" height="21" rx="7.5" stroke="currentColor"/>
-      <circle cx="8" cy="7" r="2" fill="currentColor">
-        <animate attributeName="cy" values="6;14;6" dur="1.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0;1" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
-    </svg>
+      </label>
+      <button class="burger" aria-label="Ouvrir le menu" aria-controls="mobile-nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-blob-1"></div>
+  <div class="hero-blob-2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span>Gagnoa, Côte d'Ivoire · Depuis 2021</span>
+    </div>
+    <h1 class="hero-title">
+      L'Excellence<br>
+      <span class="grad-word">Numérique</span><br>
+      &amp; Créative.
+    </h1>
+    <p class="hero-desc">
+      De la conception logicielle à l'impression haute définition, PLCORP transforme vos idées en réalité. Six pôles d'expertise, une vision unique.
+    </p>
+    <div class="hero-actions">
+      <a href="services.html" class="btn btn-primary">Découvrir nos pôles <i class="fas fa-arrow-right"></i></a>
+      <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20demander%20un%20devis." class="btn btn-outline" target="_blank">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section id="stats">
+  <div class="stats-grid reveal">
+    <div class="stat-item">
+      <div class="stat-number" data-target="6" data-suffix="+">0+</div>
+      <div class="stat-label">Pôles Spécialisés</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="200" data-suffix="+">0+</div>
+      <div class="stat-label">Clients Satisfaits</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="350" data-suffix="+">0+</div>
+      <div class="stat-label">Projets Livrés</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="4.9" data-suffix="/5" data-float="true">0/5</div>
+      <div class="stat-label">Note Clients</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES OVERVIEW ── -->
+<section id="services-overview">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label reveal">Expertises</div>
+        <h2 class="section-title reveal reveal-delay-1">Nos Pôles<br><span class="grad">d'Excellence</span></h2>
+      </div>
+      <p class="section-sub reveal reveal-delay-2">
+        Une vision unique déclinée en six départements spécialisés pour couvrir 100% de vos besoins technologiques et créatifs.
+      </p>
+    </div>
+
+    <div class="poles-grid">
+      <div class="pole-card immo reveal reveal-delay-1">
+        <div class="pole-glow"></div>
+        <div class="pole-icon"><i class="fas fa-city"></i></div>
+        <div class="pole-name">PL Corp IMMO</div>
+        <p class="pole-desc">Solutions technologiques pour l'immobilier. Gestion locative, plans 2D/3D et services transactionnels.</p>
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services%20IMMO." class="pole-link" target="_blank">Nous contacter <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="pole-card tech reveal reveal-delay-2">
+        <div class="pole-glow"></div>
+        <div class="pole-icon"><i class="fas fa-microchip"></i></div>
+        <div class="pole-name">PL Corp Tech</div>
+        <p class="pole-desc">Maintenance, réseaux et solutions matérielles pour les entreprises et particuliers.</p>
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20j%27ai%20besoin%20d%27une%20assistance%20Tech." class="pole-link" target="_blank">Assistance <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="pole-card academy reveal reveal-delay-3">
+        <div class="pole-glow"></div>
+        <div class="pole-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="pole-name">PL Corp Academy</div>
+        <p class="pole-desc">Formations pratiques en code, bureautique et nouvelles technologies pour tous niveaux.</p>
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20m%27inscrire%20%C3%A0%20une%20formation." class="pole-link" target="_blank">S'inscrire <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="pole-card print reveal reveal-delay-4">
+        <div class="pole-glow"></div>
+        <div class="pole-icon"><i class="fas fa-print"></i></div>
+        <div class="pole-name">PL Corp Print</div>
+        <p class="pole-desc">Impression de cartes de visite premium et imperméables, bâches, flyers — livraison à Gagnoa.</p>
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20passer%20une%20commande%20d%27impression." class="pole-link" target="_blank">Commander <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="pole-card graphic reveal reveal-delay-5">
+        <div class="pole-glow"></div>
+        <div class="pole-icon"><i class="fas fa-pen-nib"></i></div>
+        <div class="pole-name">PL Corp Graphic</div>
+        <p class="pole-desc">Logos, chartes graphiques et visuels percutants pour votre marque et vos réseaux sociaux.</p>
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20un%20devis%20pour%20du%20Design%20Graphique." class="pole-link" target="_blank">Devis Design <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="pole-card digital reveal reveal-delay-6">
+        <div class="pole-glow"></div>
+        <div class="pole-icon"><i class="fas fa-code"></i></div>
+        <div class="pole-name">PL Corp Digital</div>
+        <p class="pole-desc">Développement d'applications métiers, sites web performants et solutions digitales sur mesure.</p>
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20lancer%20un%20projet%20Web%2FMobile." class="pole-link" target="_blank">Lancer un projet <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT TEASER ── -->
+<section id="about-teaser">
+  <div class="container">
+    <div class="about-teaser-grid">
+      <div>
+        <div class="section-label reveal">Notre Entreprise</div>
+        <h2 class="section-title reveal reveal-delay-1">L'Innovation<br>au cœur du <span class="grad">Gôh</span></h2>
+        <p class="section-sub reveal reveal-delay-2" style="margin-bottom:32px;">
+          Fondée par <strong style="color:var(--blue-light)">Prince Lahide</strong>, PLCORP est un écosystème complet dédié à l'innovation à Gagnoa. Notre mission : apporter des standards de qualité internationaux au niveau local.
+        </p>
+        <div class="about-pills reveal reveal-delay-3">
+          <span class="pill">🏆 Excellence</span>
+          <span class="pill">🚀 Innovation</span>
+          <span class="pill">🤝 Partenariat</span>
+          <span class="pill">🌍 Local d'abord</span>
+          <span class="pill">📈 Impact</span>
         </div>
-    </section>
-
-    <!-- ===================== STATS ===================== -->
-    <section id="stats">
-        <div class="stats-grid reveal">
-            <div class="stat-item">
-                <div class="stat-number" data-target="5" data-suffix="+">0+</div>
-                <div class="stat-label">Pôles Spécialisés</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="200" data-suffix="+">0+</div>
-                <div class="stat-label">Clients Satisfaits</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="350" data-suffix="+">0+</div>
-                <div class="stat-label">Projets Livrés</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="4.9" data-suffix="/5" data-float="true">0/5</div>
-                <div class="stat-label">Note Clients</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== SERVICES OVERVIEW ===================== -->
-    <section id="services-overview">
-        <div class="container">
-            <div class="services-header">
-                <div>
-                    <div class="section-label reveal">Expertises</div>
-                    <h2 class="section-title reveal reveal-delay-1">Nos Pôles<br>d'Excellence</h2>
-                </div>
-                <p class="section-sub reveal reveal-delay-2">
-                    Une vision unique déclinée en cinq départements spécialisés pour couvrir 100% de vos besoins technologiques et créatifs.
-                </p>
-            </div>
-
-            <div class="poles-grid">
-                <!-- IMMO -->
-                <div class="pole-card immo reveal reveal-delay-1">
-                    <div class="pole-glow"></div>
-                    <div class="pole-icon"><i class="fas fa-city"></i></div>
-                    <div class="pole-name">PL Corp IMMO & SERVICES</div>
-                    <p class="pole-desc">Solutions technologiques pour l'immobilier. Gestion locative, plans 2D/3D et services transactionnels.</p>
-                    <a href="services.html#immo" class="pole-link">Découvrir <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!-- Tech -->
-                <div class="pole-card tech reveal reveal-delay-2">
-                    <div class="pole-glow"></div>
-                    <div class="pole-icon"><i class="fas fa-microchip"></i></div>
-                    <div class="pole-name">PL Corp Tech</div>
-                    <p class="pole-desc">Maintenance, réseaux et solutions matérielles pour les entreprises et particuliers.</p>
-                    <a href="services.html#tech" class="pole-link">Voir le pôle <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!-- Academy -->
-                <div class="pole-card academy reveal reveal-delay-3">
-                    <div class="pole-glow"></div>
-                    <div class="pole-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="pole-name">PL Corp Academy</div>
-                    <p class="pole-desc">Formations pratiques en code, bureautique et nouvelles technologies.</p>
-                    <a href="services.html#academy" class="pole-link">Voir le pôle <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!-- Print -->
-                <div class="pole-card print reveal reveal-delay-4">
-                    <div class="pole-glow"></div>
-                    <div class="pole-icon"><i class="fas fa-print"></i></div>
-                    <div class="pole-name">PL Corp Print</div>
-                    <p class="pole-desc">Impression de cartes de visite premium et imperméables, livraison partout à Gagnoa.</p>
-                    <a href="services.html#print" class="pole-link">Commander <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!-- Graphic -->
-                <div class="pole-card graphic reveal reveal-delay-5">
-                    <div class="pole-glow"></div>
-                    <div class="pole-icon"><i class="fas fa-pen-nib"></i></div>
-                    <div class="pole-name">PL Corp Graphic</div>
-                    <p class="pole-desc">Logos, chartes graphiques et visuels percutants pour votre marque.</p>
-                    <a href="services.html#graphic" class="pole-link">Voir le pôle <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <!-- Digital -->
-                <div class="pole-card digital reveal reveal-delay-6">
-                    <div class="pole-glow"></div>
-                    <div class="pole-icon"><i class="fas fa-code"></i></div>
-                    <div class="pole-name">PL Corp Digital</div>
-                    <p class="pole-desc">Développement d'applications métiers, sites web performants et solutions digitales sur mesure.</p>
-                    <a href="services.html#digital" class="pole-link">Lancer un projet <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== ABOUT TEASER ===================== -->
-    <section id="about-teaser">
-        <div class="container">
-            <div class="about-teaser-grid">
-                <div>
-                    <div class="section-label reveal">Notre Entreprise</div>
-                    <h2 class="section-title reveal reveal-delay-1">L'Innovation<br>au cœur du Gôh</h2>
-                    <p class="section-sub reveal reveal-delay-2" style="margin-bottom:32px;">
-                        Fondée par <strong style="color:var(--gold)">Prince Lahide</strong>, PLCORP est un écosystème complet dédié à l'innovation à Gagnoa. Notre mission : apporter des standards de qualité internationaux au niveau local.
-                    </p>
-                    <div class="about-pills reveal reveal-delay-3">
-                        <span class="pill">🏆 Excellence</span>
-                        <span class="pill">🚀 Innovation</span>
-                        <span class="pill">🤝 Partenariat</span>
-                        <span class="pill">🌍 Local d'abord</span>
-                        <span class="pill">📈 Impact</span>
-                    </div>
-                    <a href="about.html" class="btn btn-outline reveal reveal-delay-4" style="margin-top:32px;">
+        <a href="about.html" class="btn btn-outline reveal reveal-delay-4" style="margin-top:32px;">
           Notre histoire complète <i class="fas fa-arrow-right"></i>
         </a>
-                </div>
-                <div class="about-visual reveal reveal-delay-2">
-                    <div class="about-visual-card">
-                        <div class="av-badge">Depuis 2021</div>
-                        <div class="av-logo">PLCORP<span>.</span></div>
-                        <div class="av-tagline">Prince Lahidé Corporation</div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-visual-card">
+          <div class="av-badge">Depuis 2021</div>
+          <div class="av-logo" style="padding: 20px 0;">
+            <img src="assets/img/logo.png" alt="Logo PLCORP" style="height: 80px; width: auto; margin: 0 auto;">
+          </div>
+          <div class="av-tagline" style="margin-top: 12px;">Prince Lahidé Corporation</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ===================== REALISATIONS ===================== -->
-    <section id="realisations">
-        <div class="container">
-            <div class="section-label reveal">Confiance & Expertise</div>
-            <h2 class="section-title reveal reveal-delay-1">Nos Réalisations<br>Concrètes</h2>
-            <div class="realisations-grid">
-                <div class="realisation-card reveal reveal-delay-1">
-                    <img src="https://placehold.co/600x400/111827/00FFFF/png?text=PL-IMMO+App" alt="Application de gestion immobilière">
-                    <div class="realisation-content">
-                        <div class="realisation-title">Application de Gestion Immobilière</div>
-                        <p class="pole-desc">Développement d'une application métier pour la gestion locative à Gagnoa.</p>
-                    </div>
-                </div>
-                <div class="realisation-card reveal reveal-delay-2">
-                    <img src="https://placehold.co/600x400/111827/FF00FF/png?text=Cartes+PVC" alt="Cartes de visite imperméables">
-                    <div class="realisation-content">
-                        <div class="realisation-title">Cartes de Visite Imperméables</div>
-                        <p class="pole-desc">Conception et impression de cartes de visite premium sur support PVC pour des professionnels locaux.</p>
-                    </div>
-                </div>
-                <div class="realisation-card reveal reveal-delay-3">
-                    <img src="https://placehold.co/600x400/111827/39FF14/png?text=Logo+Design" alt="Création de logo">
-                    <div class="realisation-content">
-                        <div class="realisation-title">Identité Visuelle pour Startups</div>
-                        <p class="pole-desc">Création de logos et chartes graphiques modernes pour des entreprises émergentes de la région du Gôh.</p>
-                    </div>
-                </div>
-            </div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo PLCORP"><span class="logo-text">PLCORP</span></a>
+        <p>Votre partenaire technologique et créatif de référence à Gagnoa, Côte d'Ivoire.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profilee.php?id=61558742263762" class="social-btn" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </section>
-
-    <!-- ===================== CTA ===================== -->
-    <section id="cta-section">
-        <div class="container">
-            <div class="cta-box reveal">
-                <div class="section-label" style="justify-content:center;">Prêt à commencer ?</div>
-                <h2 class="cta-title">Concrétisons votre<br>prochain projet ensemble.</h2>
-                <p class="cta-sub">De l'idée à la réalisation, PLCORP vous accompagne à chaque étape.</p>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-gold">Démarrer un projet <i class="fas fa-arrow-right"></i></a>
-                    <a href="tel:+2250152054777" class="btn btn-outline"><i class="fas fa-phone"></i> Appeler maintenant</a>
-                </div>
-            </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Nos Pôles</div>
+        <div class="footer-links">
+          <a href="services.html#immo">PL Corp IMMO</a>
+          <a href="services.html#tech">PL Corp Tech</a>
+          <a href="services.html#academy">PL Corp Academy</a>
+          <a href="services.html#print">PL Corp Print</a>
+          <a href="services.html#graphic">PL Corp Graphic</a>
+          <a href="services.html#digital">PL Corp Digital</a>
         </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">PLCORP<span>.</span></div>
-                    <p>Votre partenaire technologique et créatif de référence à Gagnoa, Côte d'Ivoire. Excellence, innovation, impact.</p>
-                    <div class="social-row">
-                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Nos Pôles</div>
-                    <div class="footer-links">
-                        <a href="services.html#immo">PL Corp IMMO</a>
-                        <a href="services.html#tech">PL Corp Tech</a>
-                        <a href="services.html#academy">PL Corp Academy</a>
-                        <a href="services.html#print">PL Corp Print</a>
-                        <a href="services.html#graphic">PL Corp Graphic</a>
-                        <a href="services.html#digital">PL Corp Digital</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Navigation</div>
-                    <div class="footer-links">
-                        <a href="index.html">Accueil</a>
-                        <a href="services.html">Services</a>
-                        <a href="about.html">À Propos</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Contact</div>
-                    <div class="footer-links" style="gap:12px;">
-                        <span class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i> 05 75 698 835</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>princelah98@gmail.com</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Prince Lahidé Corporation. Tous droits réservés.</p>
-                <p>Conçu avec <span style="color:var(--gold)">♥</span> à Gagnoa</p>
-            </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">À Propos</a>
+          <a href="contact.html">Contact</a>
         </div>
-    </footer>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links" style="gap:12px;">
+          <a href="tel:+2250152054777" class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</a>
+          <a href="mailto:princelah98@gmail.com" style="color:var(--muted2);font-size:.88rem;display:inline-flex;align-items:center;"><i class="fas fa-envelope" style="color:var(--blue-elec);margin-right:8px;"></i>princelah98@gmail.com</a>
+          <span style="color:var(--muted2);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--blue-elec);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Prince Lahidé Corporation. Tous droits réservés.</p>
+      <p>Conçu avec <span style="background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">♥</span> à Gagnoa</p>
+    </div>
+  </div>
+</footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/+2250152054777" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<!-- WhatsApp Float -->
+<a href="https://wa.me/+2250152054777" class="whatsapp-float" target="_blank" aria-label="Discuter sur WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>

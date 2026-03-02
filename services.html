@@ -1,285 +1,300 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos 5 Pôles — PLCORP</title>
-    <meta name="description" content="Découvrez les 5 pôles d'expertise de PLCORP : Tech, Academy, Print, Graphic, Digital.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos 6 Pôles — PLCORP</title>
+  <meta name="description" content="Découvrez les 6 pôles d'expertise de PLCORP : IMMO, Tech, Academy, Print, Graphic, Digital.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script>(function(){var t=localStorage.getItem('plcorp-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
-
 <body>
 
-    <nav class="mobile-nav">
-        <span class="mobile-nav-close"><i class="fas fa-times"></i></span>
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Nos Pôles</a>
-        <a href="about.html">À Propos</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div id="theme-sweep"></div>
+<div id="page-transition"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
 
-    <div id="page-transition"></div>
+<nav class="mobile-nav" id="mobile-nav-menu">
+  <button class="mobile-nav-close" aria-label="Fermer le menu"><i class="fas fa-times"></i></button>
+  <a href="index.html">Accueil</a>
+  <a href="services.html" class="active">Nos 6 Pôles</a>
+  <a href="about.html">À Propos</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-    <header id="navbar">
-        <nav>
-            <div class="logo">PLCORP<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html" class="active">Nos 5 Pôles</a></li>
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
-            </ul>
-            <div class="burger"><span></span><span></span><span></span></div>
-        </nav>
-    </header>
-
-    <!-- ===================== PAGE HERO ===================== -->
-    <div class="page-hero">
-        <div class="section-label">Expertises</div>
-        <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4.5rem); margin-bottom:16px;">
-            Nos 5 Pôles<br><span style="color:var(--gold)">d'Excellence</span>
-        </h1>
-        <p style="color:var(--muted-2); font-size:1.1rem; max-width:580px; margin:0 auto;">
-            Chaque pôle est une entité spécialisée, pensée pour répondre à un besoin précis avec les meilleurs standards du marché.
-        </p>
+<header id="navbar">
+  <nav>
+    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo PLCORP"><span class="logo-text">PLCORP</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html" class="active">Nos 6 Pôles</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
+    </ul>
+    <div class="nav-controls">
+      <label class="theme-toggle" aria-label="Changer le thème">
+        <input type="checkbox" class="tt-input">
+        <div class="tt-track">
+          <div class="tt-thumb">
+            <span class="tt-icon-dark">🌙</span>
+            <span class="tt-icon-light">☀️</span>
+          </div>
+        </div>
+      </label>
+      <button class="burger" aria-label="Ouvrir le menu" aria-controls="mobile-nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
+</header>
 
-    <!-- Pole navigation pills -->
-    <div style="background:var(--bg-2); border-bottom:1px solid var(--border); padding:20px 40px; position:sticky; top:74px; z-index:100; overflow-x:auto;">
-        <div style="max-width:1240px; margin:0 auto; display:flex; gap:12px; white-space:nowrap;">
-            <a href="#immo" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-city" style="color:var(--violet)"></i> IMMO & SERVICES</a>
-            <a href="#tech" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-microchip" style="color:var(--cyan)"></i> Tech</a>
-            <a href="#academy" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-graduation-cap" style="color:var(--gold)"></i> Academy</a>
-            <a href="#print" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-print" style="color:var(--magenta)"></i> Print</a>
-            <a href="#graphic" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-pen-nib" style="color:var(--violet)"></i> Graphic</a>
-            <a href="#digital" class="btn btn-outline" style="padding:8px 20px; font-size:0.82rem;"><i class="fas fa-code" style="color:var(--green)"></i> Digital</a>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="section-label">Expertises</div>
+  <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4.5rem); margin-bottom:16px;">
+    Nos 6 Pôles<br><span class="grad">d'Excellence</span>
+  </h1>
+  <p style="color:var(--muted2); font-size:1.1rem; max-width:580px; margin:0 auto;">
+    Chaque pôle est une entité spécialisée, pensée pour répondre à un besoin précis avec les meilleurs standards du marché.
+  </p>
+</div>
+
+<!-- POLE NAV BAR -->
+<div class="pole-nav-bar">
+  <div class="pole-nav-inner">
+    <a href="#immo"    class="pole-nav-pill" data-target="immo">    <i class="fas fa-city"></i>         IMMO</a>
+    <a href="#tech"    class="pole-nav-pill" data-target="tech">    <i class="fas fa-microchip"></i>    Tech</a>
+    <a href="#academy" class="pole-nav-pill" data-target="academy"> <i class="fas fa-graduation-cap"></i>Academy</a>
+    <a href="#print"   class="pole-nav-pill" data-target="print">   <i class="fas fa-print"></i>        Print</a>
+    <a href="#graphic" class="pole-nav-pill" data-target="graphic"> <i class="fas fa-pen-nib"></i>      Graphic</a>
+    <a href="#digital" class="pole-nav-pill" data-target="digital"> <i class="fas fa-code"></i>         Digital</a>
+  </div>
+</div>
+
+<!-- SERVICES DETAIL -->
+<section id="services-page">
+  <div class="container">
+    <div class="services-detail-grid">
+
+      <!-- IMMO -->
+      <div id="immo" class="service-row reveal">
+        <div class="service-row-visual">
+          <i class="fas fa-city srv-icon-bg"></i>
+          <i class="fas fa-city" style="font-size:4rem; position:relative; z-index:1; color:var(--violet-light);"></i>
         </div>
+        <div class="service-row-text">
+          <div class="service-row-number">Pôle 01 · IMMO &amp; SERVICES</div>
+          <h2 class="service-row-title">PL Corp IMMO</h2>
+          <p class="service-row-desc">
+            Solutions technologiques de pointe pour le secteur immobilier. Nous développons des applications de gestion locative, réalisons des plans 2D/3D pour la promotion et offrons des services transactionnels innovants pour les agences et propriétaires de Gagnoa.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Application de gestion</span>
+            <span class="service-tag">Plans 2D &amp; 3D</span>
+            <span class="service-tag">Visites virtuelles</span>
+            <span class="service-tag">Site web pour agence</span>
+            <span class="service-tag">Marketing immobilier</span>
+          </div>
+          <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20lancer%20un%20projet%20IMMO." class="btn-service" target="_blank">Lancer un projet immo <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- TECH -->
+      <div id="tech" class="service-row reveal">
+        <div class="service-row-visual">
+          <i class="fas fa-microchip srv-icon-bg"></i>
+          <i class="fas fa-microchip" style="font-size:4rem; position:relative; z-index:1;"></i>
+        </div>
+        <div class="service-row-text">
+          <div class="service-row-number">Pôle 02 · MAINTENANCE &amp; RÉSEAUX</div>
+          <h2 class="service-row-title">PL Corp Tech</h2>
+          <p class="service-row-desc">
+            Solutions de maintenance et de réseaux pour les entreprises locales. Nous assurons la maintenance préventive et curative de vos équipements, de l'installation de postes à la configuration de réseaux complexes pour garantir la performance de votre parc informatique.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Maintenance PC &amp; Mac</span>
+            <span class="service-tag">Réseaux LAN/WiFi</span>
+            <span class="service-tag">Installation OS</span>
+            <span class="service-tag">Récupération de données</span>
+            <span class="service-tag">Sécurité informatique</span>
+            <span class="service-tag">Vidéosurveillance</span>
+          </div>
+          <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20j%27ai%20besoin%20d%27une%20intervention%20TECH." class="btn-service" target="_blank">Demander une intervention <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- ACADEMY -->
+      <div id="academy" class="service-row reverse reveal">
+        <div class="service-row-text">
+          <div class="service-row-number">Pôle 03 · FORMATION</div>
+          <h2 class="service-row-title">PL Corp Academy</h2>
+          <p class="service-row-desc">
+            L'avenir appartient à ceux qui savent. Notre académie propose des formations intensives et pratiques pour maîtriser les outils numériques d'aujourd'hui. Cours individuels, en groupe, ou en entreprise — adaptés à votre niveau et à vos objectifs professionnels.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Développement Web</span>
+            <span class="service-tag">Suite Office</span>
+            <span class="service-tag">Design Graphique</span>
+            <span class="service-tag">Marketing Digital</span>
+            <span class="service-tag">Python &amp; Data</span>
+            <span class="service-tag">Certifications</span>
+          </div>
+          <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20des%20infos%20sur%20l%27ACADEMY." class="btn-service" target="_blank">Infos Formation <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-row-visual">
+          <i class="fas fa-graduation-cap srv-icon-bg"></i>
+          <i class="fas fa-graduation-cap" style="font-size:4rem; position:relative; z-index:1; color:#FCD34D;"></i>
+        </div>
+      </div>
+
+      <!-- PRINT -->
+      <div id="print" class="service-row reveal">
+        <div class="service-row-visual">
+          <i class="fas fa-print srv-icon-bg"></i>
+          <i class="fas fa-print" style="font-size:4rem; position:relative; z-index:1; color:#F472B6;"></i>
+        </div>
+        <div class="service-row-text">
+          <div class="service-row-number">Pôle 04 · IMPRESSION</div>
+          <h2 class="service-row-title">PL Corp Print</h2>
+          <p class="service-row-desc">
+            Impression de cartes de visite premium et imperméables, avec livraison partout à Gagnoa. Nous produisons aussi des visuels qui marquent : de la bâche géante au textile personnalisé, avec une qualité professionnelle et des délais maîtrisés.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Cartes de visite PVC</span>
+            <span class="service-tag">Bâches &amp; panneaux</span>
+            <span class="service-tag">Textile sérigraphié</span>
+            <span class="service-tag">Flyers &amp; brochures</span>
+            <span class="service-tag">Kakémonos</span>
+            <span class="service-tag">Grand format</span>
+          </div>
+          <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20commander%20des%20imprim%C3%A9s%20(PRINT)." class="btn-service" target="_blank">Commander maintenant <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- GRAPHIC -->
+      <div id="graphic" class="service-row reverse reveal">
+        <div class="service-row-text">
+          <div class="service-row-number">Pôle 05 · DESIGN CRÉATIF</div>
+          <h2 class="service-row-title">PL Corp Graphic</h2>
+          <p class="service-row-desc">
+            Votre identité visuelle est votre première impression. Notre studio de design crée des visuels qui racontent votre histoire et séduisent votre audience. Du logo à la charte graphique complète, nous construisons des marques mémorables et cohérentes.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Création de logo</span>
+            <span class="service-tag">Charte graphique</span>
+            <span class="service-tag">Supports marketing</span>
+            <span class="service-tag">Réseaux sociaux</span>
+            <span class="service-tag">Motion design</span>
+            <span class="service-tag">Direction artistique</span>
+          </div>
+          <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20un%20devis%20GRAPHIC." class="btn-service" target="_blank">Lancer un projet créatif <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-row-visual">
+          <i class="fas fa-pen-nib srv-icon-bg"></i>
+          <i class="fas fa-pen-nib" style="font-size:4rem; position:relative; z-index:1; color:#6EE7B7;"></i>
+        </div>
+      </div>
+
+      <!-- DIGITAL -->
+      <div id="digital" class="service-row reveal">
+        <div class="service-row-visual">
+          <i class="fas fa-code srv-icon-bg"></i>
+          <i class="fas fa-code" style="font-size:4rem; position:relative; z-index:1;"></i>
+        </div>
+        <div class="service-row-text">
+          <div class="service-row-number">Pôle 06 · DÉVELOPPEMENT WEB &amp; MOBILE</div>
+          <h2 class="service-row-title">PL Corp Digital</h2>
+          <p class="service-row-desc">
+            Le digital est le moteur de votre croissance. Nous mettons l'accent sur le développement d'applications métiers sur mesure — comme notre application de gestion immobilière — et de solutions web qui propulsent votre business dans l'ère numérique.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Sites vitrine &amp; e-commerce</span>
+            <span class="service-tag">Applications mobiles</span>
+            <span class="service-tag">Logiciels de gestion</span>
+            <span class="service-tag">SEO &amp; Référencement</span>
+            <span class="service-tag">Marketing digital</span>
+            <span class="service-tag">Automatisation</span>
+          </div>
+          <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20cr%C3%A9er%20un%20site%2Fapp%20(DIGITAL)." class="btn-service" target="_blank">Lancer mon projet digital <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <!-- ===================== SERVICES DETAIL ===================== -->
-    <section id="services-page">
-        <div class="container">
-            <div class="services-detail-grid">
+<!-- CTA -->
+<section id="cta-section">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="section-label" style="justify-content:center;">Passez à l'action</div>
+      <h2 class="cta-title">Quel pôle répond à<br><span class="grad">Votre Besoin du Moment ?</span></h2>
+      <p class="cta-sub">Contactez-nous pour obtenir un devis gratuit et personnalisé sous 24h.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/2250152054777?text=Bonjour%2C%20je%20viens%20de%20votre%20site%20web%20et%20je%20souhaite%20un%20devis%20gratuit." class="btn btn-primary" target="_blank">Devis gratuit <i class="fas fa-arrow-right"></i></a>
+        <a href="https://wa.me/+2250152054777" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp direct</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <!-- IMMO -->
-                <div id="immo" class="service-row immo-row reveal">
-                    <div class="service-row-visual">
-                        <i class="fas fa-city srv-icon-bg"></i>
-                        <i class="fas fa-city" style="font-size:4rem; position:relative; z-index:1;"></i>
-                    </div>
-                    <div class="service-row-text">
-                        <div class="service-row-number">Pôle 01 · IMMO & SERVICES</div>
-                        <h2 class="service-row-title">PL Corp IMMO</h2>
-                        <p class="service-row-desc">
-                            Solutions technologiques de pointe pour le secteur immobilier. Nous développons des applications de gestion locative, réalisons des plans 2D/3D pour la promotion et offrons des services transactionnels innovants pour les agences et propriétaires.
-                        </p>
-                        <div class="service-tags">
-                            <span class="service-tag">Application de gestion</span>
-                            <span class="service-tag">Plans 2D & 3D</span>
-                            <span class="service-tag">Visites virtuelles</span>
-                            <span class="service-tag">Site web pour agence</span>
-                            <span class="service-tag">Marketing immobilier</span>
-                        </div>
-                        <a href="contact.html" class="btn-service">Lancer un projet immo <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- TECH -->
-                <div id="tech" class="service-row tech-row reveal">
-                    <div class="service-row-visual">
-                        <i class="fas fa-microchip srv-icon-bg"></i>
-                        <i class="fas fa-microchip" style="font-size:4rem; position:relative; z-index:1;"></i>
-                    </div>
-                    <div class="service-row-text">
-                        <div class="service-row-number">Pôle 02 · Tech</div>
-                        <h2 class="service-row-title">PL Corp Tech</h2>
-                        <p class="service-row-desc">
-                            Solutions de maintenance et de réseaux pour les entreprises locales. Nous assurons la maintenance préventive et curative de vos équipements, de l'installation de postes à la configuration de réseaux complexes pour garantir la performance de votre parc.
-                        </p>
-                        <div class="service-tags">
-                            <span class="service-tag">Maintenance PC & Mac</span>
-                            <span class="service-tag">Réseaux LAN/WiFi</span>
-                            <span class="service-tag">Installation OS</span>
-                            <span class="service-tag">Récupération de données</span>
-                            <span class="service-tag">Sécurité informatique</span>
-                            <span class="service-tag">Vidéosurveillance</span>
-                        </div>
-                        <a href="contact.html" class="btn-service">Demander une intervention <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- ACADEMY -->
-                <div id="academy" class="service-row academy-row reverse reveal">
-                    <div class="service-row-text">
-                        <div class="service-row-number">Pôle 03 · Formation</div>
-                        <h2 class="service-row-title">PL Corp Academy</h2>
-                        <p class="service-row-desc">
-                            L'avenir appartient à ceux qui savent. Notre académie propose des formations intensives et pratiques pour maîtriser les outils numériques d'aujourd'hui. Cours individuels, groupes, ou formations en entreprise — adaptés à votre niveau et vos objectifs.
-                        </p>
-                        <div class="service-tags">
-                            <span class="service-tag">Développement Web</span>
-                            <span class="service-tag">Suite Office</span>
-                            <span class="service-tag">Design Graphique</span>
-                            <span class="service-tag">Marketing Digital</span>
-                            <span class="service-tag">Python & Data</span>
-                            <span class="service-tag">Certifications</span>
-                        </div>
-                        <a href="contact.html" class="btn-service">Voir les programmes <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="service-row-visual">
-                        <i class="fas fa-graduation-cap srv-icon-bg"></i>
-                        <i class="fas fa-graduation-cap" style="font-size:4rem; position:relative; z-index:1;"></i>
-                    </div>
-                </div>
-
-                <!-- PRINT -->
-                <div id="print" class="service-row print-row reveal">
-                    <div class="service-row-visual">
-                        <i class="fas fa-print srv-icon-bg"></i>
-                        <i class="fas fa-print" style="font-size:4rem; position:relative; z-index:1;"></i>
-                    </div>
-                    <div class="service-row-text">
-                        <div class="service-row-number">Pôle 04 · Impression</div>
-                        <h2 class="service-row-title">PL Corp Print</h2>
-                        <p class="service-row-desc">
-                            Impression de cartes de visite premium et imperméables, avec livraison partout à Gagnoa. Nous produisons aussi des visuels qui marquent : de la bâche géante au textile personnalisé, avec une qualité professionnelle et des délais maîtrisés.
-                        </p>
-                        <div class="service-tags">
-                            <span class="service-tag">Cartes de visite</span>
-                            <span class="service-tag">Bâches & panneaux</span>
-                            <span class="service-tag">Textile sérigraphié</span>
-                            <span class="service-tag">Flyers & brochures</span>
-                            <span class="service-tag">Kakémonos</span>
-                            <span class="service-tag">Impression grand format</span>
-                        </div>
-                        <a href="contact.html" class="btn-service">Demander un devis <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- GRAPHIC -->
-                <div id="graphic" class="service-row graphic-row reverse reveal">
-                    <div class="service-row-text">
-                        <div class="service-row-number">Pôle 05 · Design</div>
-                        <h2 class="service-row-title">PL Corp Graphic</h2>
-                        <p class="service-row-desc">
-                            Votre identité visuelle est votre première impression. Notre studio de design crée des visuels qui racontent votre histoire et séduisent votre audience. Du logo à la charte graphique complète, nous construisons des marques mémorables.
-                        </p>
-                        <div class="service-tags">
-                            <span class="service-tag">Création de logo</span>
-                            <span class="service-tag">Charte graphique</span>
-                            <span class="service-tag">Supports marketing</span>
-                            <span class="service-tag">Réseaux sociaux</span>
-                            <span class="service-tag">Motion design</span>
-                            <span class="service-tag">Direction artistique</span>
-                        </div>
-                        <a href="contact.html" class="btn-service">Lancer un projet créatif <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="service-row-visual">
-                        <i class="fas fa-pen-nib srv-icon-bg"></i>
-                        <i class="fas fa-pen-nib" style="font-size:4rem; position:relative; z-index:1;"></i>
-                    </div>
-                </div>
-
-                <!-- DIGITAL -->
-                <div id="digital" class="service-row digital-row reveal">
-                    <div class="service-row-visual">
-                        <i class="fas fa-code srv-icon-bg"></i>
-                        <i class="fas fa-code" style="font-size:4rem; position:relative; z-index:1;"></i>
-                    </div>
-                    <div class="service-row-text">
-                        <div class="service-row-number">Pôle 06 · Digital</div>
-                        <h2 class="service-row-title">PL Corp Digital</h2>
-                        <p class="service-row-desc">
-                            Le digital est le moteur de votre croissance. Nous mettons l'accent sur le développement d'applications métiers (comme notre appli de gestion immobilière) et de solutions sur mesure qui propulsent votre business dans l'ère numérique.
-                        </p>
-                        <div class="service-tags">
-                            <span class="service-tag">Sites vitrine & e-commerce</span>
-                            <span class="service-tag">Applications mobiles</span>
-                            <span class="service-tag">Logiciels de gestion</span>
-                            <span class="service-tag">SEO & Référencement</span>
-                            <span class="service-tag">Marketing digital</span>
-                            <span class="service-tag">Automatisation</span>
-                        </div>
-                        <a href="contact.html" class="btn-service">Lancer mon projet digital <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo PLCORP"><span class="logo-text">PLCORP</span></a>
+        <p>Votre partenaire technologique et créatif de référence à Gagnoa, Côte d'Ivoire.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profilee.php?id=61558742263762" class="social-btn" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </section>
-
-    <!-- CTA -->
-    <section id="cta-section">
-        <div class="container">
-            <div class="cta-box reveal">
-                <div class="section-label" style="justify-content:center;">Passez à l'action</div>
-                <h2 class="cta-title">Quel pôle répond à<br>votre besoin du moment ?</h2>
-                <p class="cta-sub">Contactez-nous pour obtenir un devis gratuit et personnalisé sous 24h.</p>
-                <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-gold">Devis gratuit <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://wa.me/+2250152054777" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp direct</a>
-                </div>
-            </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Nos Pôles</div>
+        <div class="footer-links">
+          <a href="services.html#immo">PL Corp IMMO</a>
+          <a href="services.html#tech">PL Corp Tech</a>
+          <a href="services.html#academy">PL Corp Academy</a>
+          <a href="services.html#print">PL Corp Print</a>
+          <a href="services.html#graphic">PL Corp Graphic</a>
+          <a href="services.html#digital">PL Corp Digital</a>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">PLCORP<span>.</span></div>
-                    <p>Votre partenaire technologique et créatif de référence à Gagnoa, Côte d'Ivoire.</p>
-                    <div class="social-row">
-                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Nos Pôles</div>
-                    <div class="footer-links">
-                        <a href="#immo">PL Corp IMMO</a>
-                        <a href="#tech">PL Corp Tech</a>
-                        <a href="#academy">PL Corp Academy</a>
-                        <a href="#print">PL Corp Print</a>
-                        <a href="#graphic">PL Corp Graphic</a>
-                        <a href="#digital">PL Corp Digital</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Navigation</div>
-                    <div class="footer-links">
-                        <a href="index.html">Accueil</a>
-                        <a href="services.html">Services</a>
-                        <a href="about.html">À Propos</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Contact</div>
-                    <div class="footer-links" style="gap:12px;">
-                        <span class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>princelah98@gmail.com</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Prince Lahidé Corporation. Tous droits réservés.</p>
-                <p>Conçu avec <span style="color:var(--gold)">♥</span> à Gagnoa</p>
-            </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">À Propos</a>
+          <a href="contact.html">Contact</a>
         </div>
-    </footer>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links" style="gap:12px;">
+          <a href="tel:+2250152054777" class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</a>
+          <a href="mailto:princelah98@gmail.com" style="color:var(--muted2);font-size:.88rem;display:inline-flex;align-items:center;"><i class="fas fa-envelope" style="color:var(--blue-elec);margin-right:8px;"></i>princelah98@gmail.com</a>
+          <span style="color:var(--muted2);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--blue-elec);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Prince Lahidé Corporation. Tous droits réservés.</p>
+      <p>Conçu avec <span style="background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">♥</span> à Gagnoa</p>
+    </div>
+  </div>
+</footer>
 
-    <a href="https://wa.me/+2250152054777" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<a href="https://wa.me/+2250152054777" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>

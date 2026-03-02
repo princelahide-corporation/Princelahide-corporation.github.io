@@ -1,375 +1,273 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — PLCORP</title>
-    <meta name="description" content="Contactez PLCORP pour vos projets web, design, impression ou formation à Gagnoa. Devis gratuit sous 24h.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        /* Extra FAQ styles */
-        
-        #faq {
-            padding: 80px 0 100px;
-            background: var(--bg-2);
-            border-top: 1px solid var(--border);
-        }
-        
-        .faq-list {
-            margin-top: 50px;
-            max-width: 780px;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-            transition: border-color 0.3s;
-        }
-        
-        .faq-item.open {
-            border-color: rgba(240, 165, 0, 0.3);
-        }
-        
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 22px 24px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 0.95rem;
-            user-select: none;
-        }
-        
-        .faq-question i {
-            color: var(--gold);
-            transition: transform 0.3s;
-            flex-shrink: 0;
-        }
-        
-        .faq-item.open .faq-question i {
-            transform: rotate(45deg);
-        }
-        
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s;
-            color: var(--muted-2);
-            font-size: 0.9rem;
-            line-height: 1.75;
-        }
-        
-        .faq-item.open .faq-answer {
-            max-height: 200px;
-            padding: 0 24px 22px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — PLCORP</title>
+  <meta name="description" content="Contactez PLCORP pour vos projets web, design, impression ou formation à Gagnoa. Devis gratuit sous 24h.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script>(function(){var t=localStorage.getItem('plcorp-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
-
 <body>
 
-    <nav class="mobile-nav">
-        <span class="mobile-nav-close"><i class="fas fa-times"></i></span>
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Nos Pôles</a>
-        <a href="about.html">À Propos</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div id="theme-sweep"></div>
+<div id="page-transition"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
 
-    <div id="page-transition"></div>
+<nav class="mobile-nav" id="mobile-nav-menu">
+  <button class="mobile-nav-close" aria-label="Fermer le menu"><i class="fas fa-times"></i></button>
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Nos 6 Pôles</a>
+  <a href="about.html">À Propos</a>
+  <a href="contact.html" class="active">Contact</a>
+</nav>
 
-    <header id="navbar">
-        <nav>
-            <div class="logo">PLCORP<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Nos 5 Pôles</a></li>
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html" class="btn-nav active">Nous contacter</a></li>
-            </ul>
-            <div class="burger"><span></span><span></span><span></span></div>
-        </nav>
-    </header>
-
-    <!-- PAGE HERO -->
-    <div class="page-hero">
-        <div class="section-label">Contactez-nous</div>
-        <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4.5rem); margin-bottom:16px;">
-            Parlons de votre<br><span style="color:var(--gold)">Prochain Projet</span>
-        </h1>
-        <p style="color:var(--muted-2); font-size:1.1rem; max-width:520px; margin:0 auto;">
-            Un devis gratuit sous 24h. Une réponse rapide, une équipe disponible.
-        </p>
+<header id="navbar">
+  <nav>
+    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo PLCORP"><span class="logo-text">PLCORP</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Nos 6 Pôles</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li><a href="contact.html" class="btn-nav active">Nous contacter</a></li>
+    </ul>
+    <div class="nav-controls">
+      <label class="theme-toggle" aria-label="Changer le thème">
+        <input type="checkbox" class="tt-input">
+        <div class="tt-track">
+          <div class="tt-thumb">
+            <span class="tt-icon-dark">🌙</span>
+            <span class="tt-icon-light">☀️</span>
+          </div>
+        </div>
+      </label>
+      <button class="burger" aria-label="Ouvrir le menu" aria-controls="mobile-nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
+</header>
 
-    <!-- ===================== CONTACT SECTION ===================== -->
-    <section id="contact-page">
-        <div class="container">
-            <div class="contact-grid">
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="section-label">Contactez-nous</div>
+  <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4.5rem); margin-bottom:16px;">
+    Parlons de votre<br><span class="grad">Prochain Projet</span>
+  </h1>
+  <p style="color:var(--muted2); font-size:1.1rem; max-width:520px; margin:0 auto;">
+    Un devis gratuit sous 24h. Une réponse rapide, une équipe disponible et à votre écoute.
+  </p>
+</div>
 
-                <!-- FORM -->
-                <div class="contact-form-box reveal">
-                    <h2 class="form-title">Envoyer un message</h2>
+<!-- CONTACT SECTION -->
+<section id="contact-page">
+  <div class="container">
+    <!-- Centered Layout since form is removed -->
+    <div class="contact-grid" style="display:flex; justify-content:center; max-width:800px; margin:0 auto;">
 
-                    <form id="contact-form">
-                        <div class="form-row form-row-2">
-                            <div>
-                                <label for="name">Votre nom</label>
-                                <input type="text" id="name" name="name" placeholder="Jean Konan" required>
-                            </div>
-                            <div>
-                                <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="07 XX XX XX XX">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <label for="email">Adresse e-mail</label>
-                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="service">Pôle concerné</label>
-                            <select id="service" name="service">
-              <option value="">— Sélectionnez un pôle —</option>
-              <option value="immo">PL Corp IMMO & SERVICES</option>
-              <option value="tech">PL Corp Tech — Maintenance & Réseaux</option>
-              <option value="academy">PL Corp Academy — Formations</option>
-              <option value="print">PL Corp Print — Impression</option>
-              <option value="graphic">PL Corp Graphic — Design</option>
-              <option value="digital">PL Corp Digital — Web & Mobile</option>
-              <option value="autre">Autre / Général</option>
-            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="budget">Budget approximatif</label>
-                            <select id="budget" name="budget">
-              <option value="">— Votre budget —</option>
-              <option>Moins de 50 000 FCFA</option>
-              <option>50 000 – 150 000 FCFA</option>
-              <option>150 000 – 500 000 FCFA</option>
-              <option>Plus de 500 000 FCFA</option>
-              <option>À définir ensemble</option>
-            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="message">Décrivez votre projet</label>
-                            <textarea id="message" name="message" placeholder="Bonjour, j'ai besoin de..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">
-            <i class="fas fa-paper-plane"></i> Envoyer le message
-          </button>
-                    </form>
+      <!-- INFOS -->
+      <div class="contact-info reveal reveal-delay-2" style="width:100%;">
+        <div class="info-title">Joignez-nous directement</div>
 
-                    <div class="form-success" id="form-success">
-                        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
-                        <div class="success-title">Message envoyé !</div>
-                        <p class="success-sub">Merci pour votre message. Notre équipe vous répondra dans les 24 heures.</p>
-                    </div>
-                </div>
-
-                <!-- INFOS -->
-                <div class="contact-info reveal reveal-delay-2">
-                    <div class="info-title">Joignez-nous directement</div>
-
-                    <div class="info-list">
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-phone"></i></div>
-                            <div>
-                                <div class="info-text-label">Téléphone principal</div>
-                                <a href="tel:+2250152054777" class="info-text-value">01 52 054 777</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-phone"></i></div>
-                            <div>
-                                <div class="info-text-label">Téléphone secondaire</div>
-                                <a href="tel:+2250575698835" class="info-text-value">05 75 698 835</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <div class="info-text-label">Email</div>
-                                <a href="mailto:princelah98@gmail.com" class="info-text-value">princelah98@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
-                            <div>
-                                <div class="info-text-label">WhatsApp</div>
-                                <a href="https://wa.me/+2250152054777" target="_blank" class="info-text-value">+225 01 52 054 777</a>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <div class="info-text-label">Adresse</div>
-                                <div class="info-text-value">Gagnoa, Côte d'Ivoire</div>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fas fa-clock"></i></div>
-                            <div>
-                                <div class="info-text-label">Horaires d'ouverture</div>
-                                <div class="info-text-value">Lun–Ven : 8h–18h<br><span style="color:var(--muted);font-size:.85rem;">Sam : 9h–13h</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 28px; text-align: center;">
-                        <div class="info-title" style="font-size: 1rem; margin-bottom: 14px;">Liaison instantanée</div>
-                        <div style="padding: 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); display: inline-block;">
-                            <img src="https://placehold.co/150x150/ffffff/080C14/png?text=QR+Code" alt="QR Code WhatsApp" style="width: 150px; height: 150px; border-radius: 8px;">
-                            <p style="color: var(--muted-2); font-size: 0.8rem; margin-top: 12px;">Scannez pour discuter sur WhatsApp</p>
-                        </div>
-                    </div>
-
-                    <div style="margin-top:28px;">
-                        <div class="info-title" style="font-size:1rem; margin-bottom:14px;">Suivez-nous</div>
-                        <div class="social-row">
-                            <a href="https://www.facebook.com/profilee.php?id=61558742263762" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <!--a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>-->
-                            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Response promise card -->
-                    <div style="background:rgba(240,165,0,0.06); border:1px solid rgba(240,165,0,0.2); border-radius:var(--radius); padding:24px; margin-top:24px;">
-                        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
-                            <i class="fas fa-bolt" style="color:var(--gold); font-size:1.2rem;"></i>
-                            <strong style="font-family:var(--font-title);">Réponse garantie sous 24h</strong>
-                        </div>
-                        <p style="color:var(--muted-2); font-size:0.85rem; line-height:1.6;">
-                            Nous nous engageons à répondre à chaque demande dans les 24 heures ouvrées. Pour les urgences, contactez-nous directement par WhatsApp.
-                        </p>
-                    </div>
-                </div>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="info-text-label">Téléphone principal</div>
+              <a href="tel:+2250152054777" class="info-text-value">+225 01 52 054 777</a>
             </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="info-text-label">Téléphone secondaire</div>
+              <a href="tel:+2250575698835" class="info-text-value">+225 05 75 698 835</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="info-text-label">Email</div>
+              <a href="mailto:princelah98@gmail.com" class="info-text-value">princelah98@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="info-text-label">WhatsApp</div>
+              <a href="https://wa.me/+2250152054777" target="_blank" class="info-text-value">+225 01 52 054 777</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="info-text-label">Adresse</div>
+              <div class="info-text-value">Gagnoa, Région du Gôh<br>Côte d'Ivoire</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="info-text-label">Horaires d'ouverture</div>
+              <div class="info-text-value">
+                Lun–Ven : 8h–18h<br>
+                <span style="color:var(--muted);font-size:.85rem;">Sam : 9h–13h</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- ===================== FAQ ===================== -->
-    <section id="faq">
-        <div class="container">
-            <div style="text-align:center;">
-                <div class="section-label reveal" style="justify-content:center;">Questions fréquentes</div>
-                <h2 class="section-title reveal reveal-delay-1">Vous avez des questions ?</h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item reveal">
-                    <div class="faq-question">
-                        <span>Comment obtenir un devis pour mon projet ?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Remplissez simplement le formulaire ci-dessus ou contactez-nous par WhatsApp. Nous vous enverrons un devis détaillé et personnalisé dans les 24 heures, entièrement gratuit et sans engagement.
-                    </div>
-                </div>
-                <div class="faq-item reveal reveal-delay-1">
-                    <div class="faq-question">
-                        <span>Quels sont vos délais de livraison ?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Les délais varient selon le type de projet : une carte de visite peut être prête en 24-48h, un logo en 3-5 jours, un site web en 1-3 semaines. Nous vous communiquons un délai précis lors du devis.
-                    </div>
-                </div>
-                <div class="faq-item reveal reveal-delay-2">
-                    <div class="faq-question">
-                        <span>Proposez-vous des formations pour débutants ?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Oui ! PL Corp Academy accueille tous les niveaux, du débutant absolu au professionnel souhaitant se perfectionner. Nos formateurs adaptent le contenu à votre niveau et vos objectifs.
-                    </div>
-                </div>
-                <div class="faq-item reveal reveal-delay-3">
-                    <div class="faq-question">
-                        <span>Intervenez-vous en dehors de Gagnoa ?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Nous intervenons principalement dans la région du Gôh, mais nous pouvons prendre en charge des projets digitaux et graphiques pour des clients partout en Côte d'Ivoire et à l'international via internet.
-                    </div>
-                </div>
-                <div class="faq-item reveal reveal-delay-4">
-                    <div class="faq-question">
-                        <span>Quels modes de paiement acceptez-vous ?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        Nous acceptons les paiements en espèces, par Orange Money, MTN Money et Wave. Pour les grands projets, un paiement en plusieurs tranches peut être arrangé.
-                    </div>
-                </div>
-            </div>
+        <!-- QR Code -->
+        <div style="margin-top:28px; text-align:center;">
+          <div class="info-title" style="font-size:1rem; margin-bottom:14px;">Liaison instantanée</div>
+          <div style="padding:20px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); display:inline-block; transition:border-color 0.2s;" onmouseenter="this.style.borderColor='var(--border2)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <img src="assets/img/qr-code-whatsapp.png" alt="QR Code WhatsApp PLCORP" style="width:150px; height:150px; border-radius:8px;">
+            <p style="color:var(--muted2); font-size:0.8rem; margin-top:10px; font-family:var(--font-mono); letter-spacing:1px;">Scannez → WhatsApp</p>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">PLCORP<span>.</span></div>
-                    <p>Votre partenaire technologique et créatif de référence à Gagnoa, Côte d'Ivoire.</p>
-                    <div class="social-row">
-                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Nos Pôles</div>
-                    <div class="footer-links">
-                        <a href="services.html#immo">PL Corp IMMO</a>
-                        <a href="services.html#tech">PL Corp Tech</a>
-                        <a href="services.html#academy">PL Corp Academy</a>
-                        <a href="services.html#print">PL Corp Print</a>
-                        <a href="services.html#graphic">PL Corp Graphic</a>
-                        <a href="services.html#digital">PL Corp Digital</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Navigation</div>
-                    <div class="footer-links">
-                        <a href="index.html">Accueil</a>
-                        <a href="services.html">Services</a>
-                        <a href="about.html">À Propos</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-col-title">Contact</div>
-                    <div class="footer-links" style="gap:12px;">
-                        <span class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-envelope" style="color:var(--gold);margin-right:8px;"></i>princelah98@gmail.com</span>
-                        <span style="color:var(--muted);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Prince Lahidé Corporation. Tous droits réservés.</p>
-                <p>Conçu avec <span style="color:var(--gold)">♥</span> à Gagnoa</p>
-            </div>
+        <!-- Réseaux sociaux -->
+        <div style="margin-top:28px;">
+          <div class="info-title" style="font-size:1rem; margin-bottom:14px;">Suivez-nous</div>
+          <div class="social-row">
+            <a href="https://www.facebook.com/profilee.php?id=61558742263762" class="social-btn" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
         </div>
-    </footer>
 
-    <a href="https://wa.me/+2250152054777" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+        <!-- Promise card -->
+        <div style="background:rgba(41,121,255,0.06); border:1px solid rgba(41,121,255,0.2); border-radius:var(--radius); padding:24px; margin-top:24px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+            <div style="width:36px;height:36px;background:rgba(41,121,255,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--blue-light);font-size:16px;">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <strong style="font-family:var(--font-disp); font-size:16px; text-transform:uppercase; letter-spacing:1px;">Réponse garantie sous 24h</strong>
+          </div>
+          <p style="color:var(--muted2); font-size:0.85rem; line-height:1.7;">
+            Nous nous engageons à répondre à chaque demande dans les 24 heures ouvrées. Pour les urgences, contactez-nous directement par WhatsApp.
+          </p>
+        </div>
+      </div>
 
-    <script src="assets/js/main.js"></script>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal" style="justify-content:center;">Questions fréquentes</div>
+      <h2 class="section-title reveal reveal-delay-1">Vous avez des <span class="grad">Questions ?</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span>Comment obtenir un devis pour mon projet ?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          Remplissez simplement le formulaire ci-dessus ou contactez-nous par WhatsApp. Nous vous enverrons un devis détaillé et personnalisé dans les 24 heures, entièrement gratuit et sans engagement.
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-question">
+          <span>Quels sont vos délais de livraison ?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          Les délais varient selon le type de projet : une carte de visite peut être prête en 24-48h, un logo en 3-5 jours, un site web en 1-3 semaines. Nous vous communiquons un délai précis lors du devis.
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-question">
+          <span>Proposez-vous des formations pour débutants ?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          Oui ! PL Corp Academy accueille tous les niveaux, du débutant absolu au professionnel souhaitant se perfectionner. Nos formateurs adaptent le contenu à votre niveau et vos objectifs.
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-3">
+        <div class="faq-question">
+          <span>Intervenez-vous en dehors de Gagnoa ?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          Nous intervenons principalement dans la région du Gôh, mais nous pouvons prendre en charge des projets digitaux et graphiques pour des clients partout en Côte d'Ivoire et à l'international via internet.
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-4">
+        <div class="faq-question">
+          <span>Quels modes de paiement acceptez-vous ?</span>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          Nous acceptons les paiements en espèces, par Orange Money, MTN Money et Wave. Pour les grands projets, un paiement en plusieurs tranches peut être arrangé selon un calendrier convenu.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logo PLCORP"><span class="logo-text">PLCORP</span></a>
+        <p>Votre partenaire technologique et créatif de référence à Gagnoa, Côte d'Ivoire.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profilee.php?id=61558742263762" class="social-btn" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/+2250152054777" class="social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Nos Pôles</div>
+        <div class="footer-links">
+          <a href="services.html#immo">PL Corp IMMO</a>
+          <a href="services.html#tech">PL Corp Tech</a>
+          <a href="services.html#academy">PL Corp Academy</a>
+          <a href="services.html#print">PL Corp Print</a>
+          <a href="services.html#graphic">PL Corp Graphic</a>
+          <a href="services.html#digital">PL Corp Digital</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">À Propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links" style="gap:12px;">
+          <a href="tel:+2250152054777" class="footer-phone-highlight"><i class="fas fa-phone" style="margin-right:8px;"></i>01 52 054 777</a>
+          <a href="mailto:princelah98@gmail.com" style="color:var(--muted2);font-size:.88rem;display:inline-flex;align-items:center;"><i class="fas fa-envelope" style="color:var(--blue-elec);margin-right:8px;"></i>princelah98@gmail.com</a>
+          <span style="color:var(--muted2);font-size:.88rem;"><i class="fas fa-map-marker-alt" style="color:var(--blue-elec);margin-right:8px;"></i>Gagnoa, Côte d'Ivoire</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Prince Lahidé Corporation. Tous droits réservés.</p>
+      <p>Conçu avec <span style="background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">♥</span> à Gagnoa</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/+2250152054777" class="whatsapp-float" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
